@@ -16,6 +16,7 @@ import { onMount } from 'svelte';
 
 <svelte:head>
 	<title>The Green Developer</title>
+	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </svelte:head>
 
 <h1>Blog</h1>
