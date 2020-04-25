@@ -1,4 +1,4 @@
-import posts from './_posts.js';
+import glob from 'glob';
 
 const lookup = new Map();
 posts.forEach(post => {

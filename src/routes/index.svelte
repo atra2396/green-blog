@@ -1,5 +1,6 @@
 <script>
 import { onMount } from 'svelte';
+import Post from '../components/Post.svelte';
 
   onMount(() => {
     if (window.netlifyIdentity) {
@@ -15,24 +16,13 @@ import { onMount } from 'svelte';
 </script>
 
 <svelte:head>
-	<title>The Green Developer</title>
+	<title>Title</title>
 	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </svelte:head>
 
-<h1>Blog</h1>
+<main>
+<Post author="Me" title="Fake post" body="body"></Post>
+</main>
 
 <style>
-
-	h1 {
-		font-size: 2.8em;
-		text-transform: uppercase;
-		font-weight: 700;
-		margin: 0 0 0.5em 0;
-	}
-
-	@media (min-width: 480px) {
-		h1 {
-			font-size: 4em;
-		}
-	}
 </style>
