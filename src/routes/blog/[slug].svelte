@@ -1,12 +1,15 @@
 <script context="module">
+	import marked from 'marked';
+	import fm from 'front-matter';
+
 	export async function preload({ params, query }) {
 		// the `slug` parameter is available because
 		// this file is called [slug].svelte
 		const res = await this.fetch(`blog/${params.slug}.json`);
-		const data = await res.json();
+		const postData = fm(await(res.text()));
 
 		if (res.status === 200) {
-			return { post: data };
+			return { post: postData };
 		} else {
 			this.error(res.status, data.message);
 		}
@@ -54,11 +57,11 @@
 </style>
 
 <svelte:head>
-	<title>{post.title}</title>
+	<title>{post.attributes.title}</title>
 </svelte:head>
 
-<h1>{post.title}</h1>
+<h1>{post.attributes.title}</h1>
 
 <div class='content'>
-	{@html post.html}
+	{@html marked(post.body)}
 </div>

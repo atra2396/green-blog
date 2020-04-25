@@ -1,28 +1,33 @@
-import glob from 'glob';
+import fs from 'fs';
 
-const lookup = new Map();
-posts.forEach(post => {
-	lookup.set(post.slug, JSON.stringify(post));
-});
-
-export function get(req, res, next) {
+export async function get(req, res, next) {
 	// the `slug` parameter is available because
 	// this file is called [slug].json.js
 	const { slug } = req.params;
+	const filename = 'static/_posts/' + slug + '.md';
+	
+	try {
+		fs.statSync(filename);
+		const post = await new Promise((resolve, reject) => {
+			fs.readFile(filename, (err, data) => {
+				if (err) 
+					return reject(err);
+				return resolve(data);
+			});
+		});
 
-	if (lookup.has(slug)) {
 		res.writeHead(200, {
 			'Content-Type': 'application/json'
 		});
-
-		res.end(lookup.get(slug));
-	} else {
+		res.end(post);
+		
+	} catch (error) {
 		res.writeHead(404, {
 			'Content-Type': 'application/json'
 		});
 
 		res.end(JSON.stringify({
-			message: `Not found`
+			message: error.message
 		}));
 	}
 }
