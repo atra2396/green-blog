@@ -1,6 +1,7 @@
 <script context="module">
 	import marked from 'marked';
 	import fm from 'front-matter';
+	import format from 'date-format';
 
 	export async function preload({ params, query }) {
 		// the `slug` parameter is available because
@@ -21,20 +22,22 @@
 </script>
 
 <style>
-	/*
-		By default, CSS is locally scoped to the component,
-		and any unused styles are dead-code-eliminated.
-		In this page, Svelte can't know which elements are
-		going to appear inside the {{{post.html}}} block,
-		so we have to use the :global(...) modifier to target
-		all elements inside .content
-	*/
-	.content :global(h2) {
-		font-size: 1.4em;
-		font-weight: 500;
+	.post-content :global(h1) {
+		font-size: 3.0em;
+		font-weight: 400;
 	}
 
-	.content :global(pre) {
+	.post-content :global(h2) {
+		font-size: 2.4em;
+		font-weight: 300;
+	}
+
+	.date {
+		font-size: 0.8em;
+		font-weight: 200;
+	}
+
+	.post-content :global(pre) {
 		background-color: #f9f9f9;
 		box-shadow: inset 1px 1px 5px rgba(0,0,0,0.05);
 		padding: 0.5em;
@@ -42,26 +45,35 @@
 		overflow-x: auto;
 	}
 
-	.content :global(pre) :global(code) {
+	.post-content :global(pre) :global(code) {
 		background-color: transparent;
 		padding: 0;
 	}
 
-	.content :global(ul) {
+	.post-content :global(ul) {
 		line-height: 1.5;
 	}
 
-	.content :global(li) {
+	.post-content :global(li) {
 		margin: 0 0 0.5em 0;
 	}
+
+	.post-content :global(p){
+		font-size: 1.15em;
+	}
+
 </style>
 
 <svelte:head>
 	<title>{post.attributes.title}</title>
 </svelte:head>
 
-<h1>{post.attributes.title}</h1>
+<main class='post-content'>
+	<h1>{post.attributes.title}</h1>
+	<h5 class='date'>{format('MM/dd/yyyy',post.attributes.date)}</h5>
 
-<div class='content'>
-	{@html marked(post.body)}
-</div>
+	<div>
+		{@html marked(post.body)}
+	</div>
+</main>
+

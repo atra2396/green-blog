@@ -36,6 +36,7 @@
 <main>
 	<div class='content'>
 		<h1>The Green Developer</h1>
+		<br>
 		<!-- <Nav {segment}/> -->
 		<slot></slot>
 	</div>
