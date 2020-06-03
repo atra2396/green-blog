@@ -1,14 +1,10 @@
 <script>
 	import Nav from '../components/Nav.svelte';
 
-	// export let segment;
+	export let segment;
 </script>
 
 <style>
-	main {
-		background-color: #fbfbfb;
-		min-height: 100vh
-	}
 
 	.content {
 		position: relative;
@@ -36,8 +32,8 @@
 <main>
 	<div class='content'>
 		<h1>The Green Developer</h1>
+		<Nav {segment}/>
 		<br>
-		<!-- <Nav {segment}/> -->
 		<slot></slot>
 	</div>
 </main>

@@ -21,7 +21,12 @@ import Post from '../components/Post.svelte';
 </svelte:head>
 
 <main>
-<Post author="Me" title="Fake post" body="body"></Post>
+<!-- Brief about, few recent posts -->
+<div class="about-blog">
+  <h3>About this blog</h3>
+  <p>I created this blog because I thought it'd be a neat way to share my experiences as a software developer 
+  with the world, while documenting things that I'm learning along the way.</p>
+</div>
 </main>
 
 <style>

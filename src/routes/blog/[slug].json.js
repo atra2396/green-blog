@@ -1,8 +1,6 @@
 import fs from 'fs';
 
 export async function get(req, res, next) {
-	// the `slug` parameter is available because
-	// this file is called [slug].json.js
 	const { slug } = req.params;
 	const filename = 'static/_posts/' + slug + '.md';
 	

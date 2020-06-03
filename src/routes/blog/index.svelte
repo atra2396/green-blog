@@ -1,6 +1,17 @@
 <script context="module">
-	export function preload({ params, query }) {
+	export async function preload({ params, query }) {
+		const res = await this.fetch(`blog.json`);
+		const postList = JSON.parse(await res.text());
+		if (res.status === 200) {
+			return { recentPosts: postList.slice(0, Math.min(postList.length, 5)) };
+		} else {
+			this.error(res.status, data.message);
+		}
 	}
+</script>
+
+<script>
+	export let recentPosts;
 </script>
 
 <style>
@@ -10,4 +21,9 @@
 	<title>Blog</title>
 </svelte:head>
 
-<h1>Recent posts</h1>
+<main>
+	<h1>Recent posts</h1>
+	{ #each recentPosts as post }
+	<h2 >{ post.title }</h2>
+	{ /each }
+</main>
