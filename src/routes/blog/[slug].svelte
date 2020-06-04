@@ -32,6 +32,11 @@
 		font-weight: 300;
 	}
 
+	.post-content :global(img) {
+		width: 100%;
+		max-width: inherit;
+	}
+
 	.date {
 		font-size: 0.8em;
 		font-weight: 200;
