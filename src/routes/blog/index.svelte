@@ -15,6 +15,10 @@
 </script>
 
 <style>
+	ol {
+		font-size: 1.3em;
+	}
+
 </style>
 
 <svelte:head>
@@ -22,7 +26,7 @@
 </svelte:head>
 
 <main>
-	<ol>
+	<ol reversed>
 		{ #each recentPosts as post }
 		<li><a href="blog/{post.slug}">{ post.title }</a></li>
 		{ /each }

@@ -21,7 +21,11 @@ h1 {
 }
 
 a {
-	color: inherit;
+	color: blue;
+}
+
+:visited {
+	color: purple;
 }
 
 code {

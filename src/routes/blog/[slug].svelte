@@ -22,24 +22,34 @@
 </script>
 
 <style>
-	.post-content :global(h1) {
+
+	.title {
+		line-height: 0.5em;
+		margin-top: 0.5em;
 		font-size: 3.0em;
 		font-weight: 400;
 	}
+	
+	.date {
+		font-size: 0.8em;
+		font-weight: 200;
+		margin-left: 10px;
+	}
 
-	.post-content :global(h2) {
+
+	.post-content :global(h1) {
 		font-size: 2.4em;
 		font-weight: 300;
+	}
+
+	.post-content :global(h2) {
+		font-size: 1.8em;
+		font-weight: 200;
 	}
 
 	.post-content :global(img) {
 		width: 100%;
 		max-width: inherit;
-	}
-
-	.date {
-		font-size: 0.8em;
-		font-weight: 200;
 	}
 
 	.post-content :global(pre) {
@@ -73,11 +83,12 @@
 	<title>{post.attributes.title}</title>
 </svelte:head>
 
-<main class='post-content'>
-	<h1>{post.attributes.title}</h1>
+<main>
+	<h1 class='title'>{post.attributes.title}</h1>
 	<h5 class='date'>{format('MM/dd/yyyy',post.attributes.date)}</h5>
 
-	<div>
+	<br>
+	<div class='post-content'>
 		{@html marked(post.body)}
 	</div>
 </main>

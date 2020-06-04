@@ -21,6 +21,11 @@
 		margin: 0 0 0.5em 0;
 	}
 
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+
 	@media (min-width: 480px) {
 		h1 {
 			font-size: 2em;
@@ -31,7 +36,7 @@
 
 <main>
 	<div class='content'>
-		<h1>The Green Developer</h1>
+		<h1><a href='/'>The Green Developer</a></h1>
 		<Nav {segment}/>
 		<br>
 		<slot></slot>
