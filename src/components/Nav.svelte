@@ -28,6 +28,7 @@
 
 	a {
 		text-decoration: none;
+		color: inherit;
 		padding: 1em 0.5em;
 		display: block;
 	}
