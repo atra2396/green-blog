@@ -22,8 +22,9 @@
 </svelte:head>
 
 <main>
-	<h1>Recent posts</h1>
-	{ #each recentPosts as post }
-	<h2 >{ post.title }</h2>
-	{ /each }
+	<ol>
+		{ #each recentPosts as post }
+		<li><a href="blog/{post.slug}">{ post.title }</a></li>
+		{ /each }
+	</ol>
 </main>

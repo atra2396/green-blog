@@ -13,7 +13,7 @@ export async function get(req, res, next){
                     if(error)
                         return reject(error);
                     const parsedFile = fm(fileData.toString()); 
-                    const fileWithDates = { slug: file, title: parsedFile.attributes.title, date: parsedFile.attributes.date };
+                    const fileWithDates = { slug: file.slice(0, -3), title: parsedFile.attributes.title, date: parsedFile.attributes.date };
                     return resolve(fileWithDates);
                 });
             }));
