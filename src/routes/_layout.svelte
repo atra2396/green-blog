@@ -14,29 +14,20 @@
 		box-sizing: border-box;
 	}
 
-	h1 {
-		font-size: 2em;
-		text-transform: uppercase;
-		font-weight: 700;
-		margin: 0 0 0.5em 0;
-	}
-
 	a {
 		color: inherit;
 		text-decoration: none;
 	}
 
-	@media (min-width: 480px) {
-		h1 {
-			font-size: 2em;
-		}
+	.logo {
+	width: 15em;
 	}
 </style>
 
 
 <main>
 	<div class='content'>
-		<h1><a href='/'>The Green Developer</a></h1>
+		<a href='/'><img class='logo' src='/greendev.png' alt='The Green Developer'/></a>
 		<Nav {segment}/>
 		<br>
 		<slot></slot>
