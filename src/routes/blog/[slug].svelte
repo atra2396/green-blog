@@ -4,8 +4,6 @@
 	import format from 'date-format';
 
 	export async function preload({ params, query }) {
-		// the `slug` parameter is available because
-		// this file is called [slug].svelte
 		const res = await this.fetch(`blog/${params.slug}.json`);
 		const postData = fm(await(res.text()));
 
@@ -24,8 +22,7 @@
 <style>
 
 	.title {
-		line-height: 0.5em;
-		margin-top: 0.5em;
+		margin-bottom: 0em;
 		font-size: 3.0em;
 		font-weight: 400;
 	}
