@@ -1,7 +1,6 @@
 <script>
 	import Nav from '../components/Nav.svelte';
 
-	export let segment;
 </script>
 
 <style>
@@ -28,7 +27,7 @@
 <main>
 	<div class='content'>
 		<a href='/'><img class='logo' src='/greendev.png' alt='The Green Developer'/></a>
-		<Nav {segment}/>
+		<Nav />
 		<br>
 		<slot></slot>
 	</div>

@@ -70,10 +70,6 @@
 		margin: 0 0 0.5em 0;
 	}
 
-	.post-content :global(p){
-		font-size: 1.15em;
-	}
-
 </style>
 
 <svelte:head>
