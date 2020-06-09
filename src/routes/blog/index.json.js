@@ -21,7 +21,7 @@ export async function get(req, res, next){
 
         const files = await Promise.all(filePromises); 
         console.log(files);
-        const sortedFiles = files.sort((a, b)=> new Date(a.date) - new Date(b.date));
+        const sortedFiles = files.sort((a, b)=> new Date(b.date) - new Date(a.date));
 
         console.log(sortedFiles);
 
