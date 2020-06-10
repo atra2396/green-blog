@@ -4,4 +4,17 @@ title: Encouraging Innovation in the Workplace
 date: 2020-06-05T21:08:50.441Z
 ---
 ## The Situation
-There are a lot of reasons that I enjoy my current job. One of the biggest is this: Individual Contributors on the Engineering team (both development and QA) have a voice. People are not afraid to raise concerns about processes that don't seem to fit, or projects whose purposes are not obviously understood, or technical decisions that don't demonstrate good foresight. One area, though, that we seem to struggle in is finding time to experiment and innovate. This is not to say that _no_ innovation takes place - it certainly does, though typically in small doses. The problem is that this "R&D" phase is usually an after-hours affair; there is little time between tight release schedules for people to educate themselves on whatever they may have an interest in. There is a policy which allows people to spend time tinkering, however, it is not often utilized largely for two reasons: The amount of buy-in from the product team is questionable,
+I have the good fortune of working with some talented software developers at my current job. People with a healthy curiosity, good ideas, and the skill to act on them. People who care about the work that they do, and are dedicated to the craft of software development.
+
+Our company also has an existing provision for "innovation time", which we call "Tinker Time". It's loosely based off Atlassian's [20% time experiment](https://www.atlassian.com/blog/archives/20_time_experiment), with a few key differences:
+- Tinker Time grants each member of the engineering team (both dev and QA) 2 days a month to experiment and 
+
+- Management: unknown stance, passing up the chain
+- Existing policy: a good provision for experimentation
+    - ...but we're still at a standstill!
+- Observation: locked in a Prisoner's Dilemma: no common knowledge, best for nobody to risk getting punished
+- Solution: Guild up
+    - What is a guild?
+    - SAFe: Communities of Practice
+    - Commit to planning
+        - Velocity vs. Innovation: benefits we've seen
