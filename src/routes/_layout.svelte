@@ -7,7 +7,7 @@
 
 	.content {
 		position: relative;
-		max-width: 60em;
+		max-width: 50em;
 		padding: 2em;
 		margin: 0 auto;
 		box-sizing: border-box;
