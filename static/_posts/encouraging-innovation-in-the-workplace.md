@@ -14,10 +14,10 @@ Our company also has a provision for "innovation time", which we call "Tinker Ti
 So, given the existence of both of these things, we should have a good handle on innovation, right?
 
 
-
 Wrong.
 
 ## The Problem
+Nobody takes Tinker Time. Tinker Time as a concept is known to our project management team. And, despite the recent changes in leadership, nobody has explicitly _killed_ the policy. In fact, when I brought the existence of the policy to their attention just a few weeks ago, they encouraged us to take it. 
 
 - Management: unknown stance, passing up the chain
 - Existing policy: a good provision for experimentation
