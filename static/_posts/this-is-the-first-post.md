@@ -3,22 +3,16 @@ layout: blog
 title: This is the First Post
 date: 2020-04-25T00:25:50.945Z
 ---
-## The Long Awaited First Post
+<!--StartFragment-->
 
-- - -
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vulputate, ligula vitae ultricies dictum, libero lorem aliquet diam, sed sagittis tellus lorem in arcu. Praesent fringilla neque id fringilla interdum. Sed commodo sed eros non volutpat. In eu magna tincidunt, vehicula magna at, tempor dui. Sed risus arcu, laoreet eget ornare in, fringilla eu dui. Proin sollicitudin pellentesque tortor id imperdiet. Praesent sit amet ante eget ligula consequat maximus sed vestibulum diam. Pellentesque vitae volutpat nibh.
 
-This is the first post in my new blog, *The Green Developer*. This post if just a test so I'm including as many markdown components as I can, such as:
+Proin sed urna ac neque tincidunt sodales tempor at quam. Ut dignissim ipsum magna, a tempor felis vehicula ac. Fusce quis risus et massa rhoncus feugiat. Quisque suscipit pulvinar lectus, a euismod nisi mattis et. Donec rutrum in orci rhoncus faucibus. In vel ipsum dictum, mollis mauris eget, bibendum enim. Nullam varius tortor a enim facilisis, eget fermentum nibh suscipit. Nam lobortis lorem eu felis lobortis mattis. Nulla vel est rhoncus, blandit est aliquam, egestas lectus. Donec sit amet leo velit. Vestibulum et magna eget augue euismod feugiat. Duis non nisi eget urna interdum pretium vitae a ipsum. Pellentesque arcu ipsum, venenatis vel consectetur varius, malesuada ultrices velit. Pellentesque lorem libero, commodo at ante ac, lobortis tempor sem. Aenean pellentesque tellus et est mattis, ut dapibus est accumsan. Nullam a pellentesque arcu.
 
-* Lists
+Phasellus posuere commodo bibendum. Aenean rutrum felis nec metus dapibus consequat. Praesent faucibus erat eu libero blandit volutpat. Nullam congue, lectus in cursus laoreet, risus felis facilisis nulla, tincidunt vehicula justo mauris vitae leo. Cras tempor massa ac ligula interdum rutrum. Donec nec metus ac lectus commodo pellentesque. Aenean consectetur sed odio eu tempus.
 
-2. Ordered Lists
+Curabitur vitae ipsum mattis, dignissim ante consectetur, ornare lectus. Phasellus malesuada nunc eget enim pretium ornare. Aliquam scelerisque tortor quis risus facilisis, vel rutrum turpis finibus. Fusce faucibus, est at finibus dapibus, neque lacus dignissim magna, sed elementum arcu augue non quam. Vestibulum elementum quis velit nec tristique. Vivamus sit amet turpis vitae tortor fermentum varius. Aenean metus lectus, imperdiet non massa id, volutpat aliquam tortor. Duis a leo odio. Ut pulvinar augue enim, non dapibus mi lacinia quis. Vivamus massa tellus, mollis at nisi a, auctor faucibus velit. Proin luctus rutrum tellus vel convallis. Sed bibendum neque in quam consectetur, quis cursus lectus placerat. Quisque tincidunt, sem vel varius bibendum, magna tortor auctor ex, ut elementum lectus augue et lacus. Ut tincidunt, dolor at fermentum tristique, justo dolor eleifend arcu, pulvinar ullamcorper ex orci vel metus. Cras sit amet pretium libero, maximus interdum odio. Quisque ullamcorper gravida urna non convallis.
 
-* **bold**
+Quisque egestas arcu tortor, quis dapibus neque pharetra quis. Aliquam eget nibh consequat, tristique enim vitae, mattis lorem. Praesent interdum magna id risus efficitur, in venenatis enim lobortis. Duis eget magna velit. Suspendisse imperdiet odio et metus tempus dapibus. Curabitur tellus elit, luctus eget porta sed, posuere quis dui. Donec vel pellentesque erat. Pellentesque posuere quis nisi in euismod. Donec nec ipsum imperdiet, iaculis mi sit amet, mollis lacus. Phasellus fringilla, velit eget pharetra pretium, ligula dui venenatis nibh, a laoreet nunc nibh sollicitudin metus. Donec bibendum dapibus lacus, iaculis vehicula nisi aliquam quis. Maecenas lobortis vitae ipsum sed varius.
 
-and finally `code`
-
-here is an image:
-
-![a Julia set](/uploads/julia.png)
-
-And here is some text following the image
+<!--EndFragment-->
