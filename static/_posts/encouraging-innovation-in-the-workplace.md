@@ -17,7 +17,7 @@ So, given the existence of both of these things, we should have a good handle on
 Wrong.
 
 ## The Problem
-Nobody takes Tinker Time. Tinker Time as a concept is known to our project management team. And, despite the recent changes in leadership, nobody has explicitly _killed_ the policy. In fact, when I brought the existence of the policy to their attention just a few weeks ago, they encouraged us to take it. 
+Nobody takes Tinker Time. Tinker Time as a concept is known to our project management team. And, despite the recent changes in leadership, nobody has explicitly _killed_ the policy. In fact, when I brought the existence of the policy to their attention just a few weeks ago, they encouraged us to take it. But nobody does. Even though the policy is documented and universally understood, Tinker Time isn't accounted for in any of our timelines. One has to declare their PTO two weeks in advance so that it can be accounted for in the next Sprint; Tinker Time has no such rule. 
 
 - Management: unknown stance, passing up the chain
 - Existing policy: a good provision for experimentation
