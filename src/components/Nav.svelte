@@ -37,7 +37,6 @@
 <nav>
 	<ul>
 		<li><a rel=prefetch href='/'>home</a></li>
-		<li><a rel=prefetch href='about'>about</a></li>
 		<li><a rel=prefetch href='blog'>blog</a></li>
 	</ul>
 </nav>

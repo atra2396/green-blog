@@ -20,10 +20,15 @@ import { onMount } from 'svelte';
 </svelte:head>
 
 <main>
-<!-- Brief about, few recent posts -->
+
 <div>
   <h2>Alijah Green's Blog</h2>
-  <p>This blog serves as a place for me to document what I'm learning, projects I'm working on, and stories from the workplace.
+  <h3>Who am I?</h3>
+  <p>My name is Alijah Green, and I'm a software developer from the Lexington, KY area. I created this blog as a way for me to 
+  document things I'm learning, projects I'm working on, and stories from the workplace.
+  <br>
+  <a href='https://www.github.com/atra2396' target='_blank'>Here</a> is a link to my GitHub, where you can find the source for this very blog.
   </p>
+
 </div>
 </main>
