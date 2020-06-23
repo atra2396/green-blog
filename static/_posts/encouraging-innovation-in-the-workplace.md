@@ -11,10 +11,9 @@ Our company also has a provision for "innovation time", which we call "Tinker Ti
 - Even if one's Tinker Time doesn't yield an artifact, a presentation must be given to the whole engineering team (about 20 people at the time of writing this) sometime afterwards. It doesn't have to be long, typically between 15 and 30 minutes. A PowerPoint is required if there's nothing to demo.
 - Tinker Time can be used to pay down tech debt. If it's used to improve an existing product, then no presentation is required. Anything that is worked on must undergo the usual testing and deployment process in order to make it into production.
 
-So, given the existence of both of these things, we should have a good handle on innovation, right?
 
-
-Wrong.
+So, given the existence of both of these things, we should have a good handle on innovation, right? Well...  
+  
 
 ## The Problem
 Nobody takes Tinker Time. Tinker Time as a concept is known to our project management team. And, despite the recent changes in leadership, nobody has explicitly _killed_ the policy. In fact, when I brought the existence of it to their attention just a few weeks ago, they encouraged us to take it. But nobody does. Even though the policy is documented and universally understood, Tinker Time isn't accounted for in any of our timelines. One has to declare their PTO two weeks in advance so that it can be accounted for in the next Sprint; Tinker Time has no such rule. Nobody wants to be the one who left their team hanging for 2 to 4 days to mess with Blazor, or to fix some poor styling on in internal tool. Thus, we find ourselves in a Prisoner's Dilemma. If everyone took Tinker Time, then innovation and a certain amount of oft-lambasted tech debt wouldn't be a problem. But if only a few people take it, then their teams are more likely to fall behind and be noticed. Thus, nobody takes it for fear of being the one who caused their project to miss a deadline. 

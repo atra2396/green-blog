@@ -23,7 +23,7 @@
 
 	.title {
 		margin-bottom: 0em;
-		font-size: 3.0em;
+		font-size: 2.75em;
 		font-weight: 400;
 	}
 	
@@ -82,7 +82,7 @@
 
 	<br>
 	<div class='post-content'>
-		{@html marked(post.body)}
+		{@html marked(post.body, { breaks: true })}
 	</div>
 </main>
 
