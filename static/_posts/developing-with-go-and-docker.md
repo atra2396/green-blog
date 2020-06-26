@@ -18,7 +18,7 @@ Fortunately, Go has an [official Docker image](https://hub.docker.com/_/golang).
 <div class='center'><code>docker pull golang</code></div> 
 <br>
 
-in development, I don't mind to use the latest version of the image (as implied by not giving a tag), since I'm only using this for the CLI. Alpine-based images are great for production builds but for development, the utility of having a (mostly) full toolkit of Unix commands at my fingertips is well worth the larger image size. Actually running the image is a piece of cake. With a command prompt open in the Go project's root directory run
+in development, I don't mind to use the latest version of the image (as implied by not giving a tag), since I'm only using this for the CLI. Alpine-based images are great for production builds but for development, the utility of having a (mostly) full toolkit of Unix commands at my fingertips is well worth the larger image size. Actually running the image is a piece of cake. With a command prompt open in the Go project's root directory, run the following:
 
 <br>
 <div class='center'><code>docker run -it --name golang-dev -p 80:8080 -v ${PWD}:/go/[some folder name] golang</code></div>
