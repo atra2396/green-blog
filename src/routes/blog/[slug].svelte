@@ -70,10 +70,6 @@
 		margin: 0 0 0.5em 0;
 	}
 
-	.post-content :global(p) {
-		margin-bottom: 1.5em;
-	}
-
 </style>
 
 <svelte:head>
