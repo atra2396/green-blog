@@ -10,11 +10,15 @@ That's all well and good, but unfortunately I've been spoiled by containerizatio
 ## The "golang" image
 Fortunately, Go has an [official Docker image](https://hub.docker.com/_/golang). Getting started with Go in Docker is easy. First, pull the golang image from DockerHub:
 
+
 ```docker pull golang``` 
+
 
 in development, I don't mind to use the latest version of the image (as implied by not giving a tag), since I'm only using this for the CLI. Alpine-based images are great for production builds but for development, the utility of having a (mostly) full toolkit of Unix commands at my fingertips is well worth the larger image size. Actually running the image is a piece of cake. With a command prompt open in the Go project's root directory run
 
+
 ``` docker run -it --name golang-dev -p 80:8080 -v ${PWD}:/go/[some folder name] golang ```
+
 
 My current Go project is an api, so ```-p 80:8080``` maps my localhost's port 80 to the container's port 8080 (which is the arbitrary number I decided to use for my mux server). ```-v ${PWD}/:go/[folder]``` mounts the current directory to the /go/[whatever] folder in the container. This means that any changes that I make to my source code are immediately reflected in the container. At this point, I've got access to the Go CLI and bash. Hooray!
 
