@@ -70,6 +70,10 @@
 		margin: 0 0 0.5em 0;
 	}
 
+	.post-content :global(p) {
+		margin-bottom: 1.5em;
+	}
+
 </style>
 
 <svelte:head>
@@ -82,7 +86,7 @@
 
 	<br>
 	<div class='post-content'>
-		{@html marked(post.body, { breaks: true })}
+		{@html marked(post.body)}
 	</div>
 </main>
 
