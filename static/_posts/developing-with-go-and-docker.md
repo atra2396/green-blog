@@ -24,7 +24,7 @@ in development, I don't mind to use the latest version of the image (as implied 
 <div class='center'><code>docker run -it --name golang-dev -p 80:8080 -v ${PWD}:/go/[some folder name] golang</code></div>
 <br>
 
-My current Go project is an api, so ```-p 80:8080``` maps my localhost's port 80 to the container's port 8080 (which is the arbitrary number I decided to use for my mux server). ```-v ${PWD}/:go/[folder]``` mounts the current directory to the /go/[whatever] folder in the container. This means that any changes that I make to my source code are immediately reflected in the container. The Golang container already has its GOPATH set to /go/src, but I am using Go modules so it doesn't matter where my files are. At this point, I've got access to the Go CLI and bash. Hooray!
+My current Go project is an api, so ```-p 80:8080``` maps my localhost's port 80 to the container's port 8080 (which is the arbitrary number I decided to use for my mux server). ```-v ${PWD}/:go/[folder]``` mounts the current directory to the /go/[whatever] folder in the container. This means that any changes that I make to my source code are immediately reflected in the container. Oftentimes docker images are run with the "--rm" flag too; this automatically removes the container once it's stopped. I have chosen not to include it here because I don't want to have to type this command out every time I want to access the Go CLI - after stopping the container, I can just type ```docker start -i golang-dev``` to drop myself back in right where I left off. At this point, I've got easy access to the Go CLI and bash. Hooray!
 
 <br>
 
