@@ -9,3 +9,5 @@ I am a big proponent of unit testing. I've done a lot of it, too - I'd haven't k
   - History: labs, testing from the beginning
   - Working out of the repo to this day
   - Highly praised from the outside, but sometimes a nightmare on the inside.
+  - _Very_ low defect rate, only one bug report after a massive refactor
+  - Time to develop new integrations is beginning to rise, not fall
