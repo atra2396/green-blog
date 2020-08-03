@@ -19,17 +19,10 @@ For the past year, I've been working on a piece of software that automates a lot
 
 <br>
 
+We wrote a lot of tests. This software had been in production for several years in its previous form, and we had a good handle on how it all fit together, how integrations with new laboratories typically went. We re-abstracted a bunch of the lab integration boilerplate to be OCP-compliant, so that we wouldn't need to modify code used by other integrations to add a new integration. We extracted interfaces from as many of the formerly-concrete classes as we could. :unit testing framework, inheritance, benefits. Success?:
 
+:Success. Low defects. Team praised for unit-testing efforts. Great pride in work, for as while...:
 
+:Onboarding new member. Finds a bug in unit tests. Takes a week to fix. Team member leaves with poor opinion of unit testing. Next integration deviates from the norm. More time to write/fix tests than to do the actual work.:
 
-
-* Why do I call these "mistakes"?
-
-  * History: labs, testing from the beginning
-  * Working out of the repo to this day
-  * Highly praised from the outside, but sometimes a nightmare on the inside.
-  * *Very* low defect rate, only one bug report after a massive refactor
-  * Time to develop new integrations is beginning to rise, not fall
-* Other notes
-
-  * The most simple kind of "flexibility" is not to enforce any "flexibility" at all
+:What went wrong? Too much abstraction. Not enough care in designing unit tests. Too much fear of duplication. Could be done well, but ours is only okay. Does the job, still low defects, but definitely not ideal.:
