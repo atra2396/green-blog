@@ -19,7 +19,7 @@ For the past year, I've been working on a piece of software that automates a lot
 
 <br>
 
-We wrote a lot of tests. This software had been in production for several years in its previous form, and we had a good handle on how it all fit together, how integrations with new laboratories typically went. We re-abstracted a bunch of the lab integration boilerplate to be OCP-compliant, so that we wouldn't need to modify code used by other integrations to add a new integration. We extracted interfaces from as many of the formerly-concrete classes as we could. :unit testing framework, inheritance, benefits. Success?:
+We wrote a lot of tests. This software had been in production for several years in its previous form, and we had a good handle on how it all fit together, how integrations with new laboratories typically went. We re-abstracted a bunch of the lab integration boilerplate to be OCP-compliant, so that we wouldn't need to modify code used by other integrations to add a new integration. We extracted interfaces from as many of the formerly-concrete classes as we could. Because we had a good handle on all of the requirements, we were able to set up some nice abstractions around a lot of our unit tests that made adding tests for a new integration take  :unit testing framework, inheritance, benefits. Success?:
 
 :Success. Low defects. Team praised for unit-testing efforts. Great pride in work, for as while...:
 
