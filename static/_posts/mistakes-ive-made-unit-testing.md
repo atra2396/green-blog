@@ -27,7 +27,7 @@ We spent a lot of time on tests, but in the end it paid off: our refactor was a 
 
 <br>
 
-...That is, until it was time to onboard a new member onto our team. He was at the time a junior developer, who was interested in our project specifically because of our judicious unit testing. While he admitted that it seemed to  work well for us, he was not convinced that unit testing so rigorously was worth the trouble, quoting [this](https://twitter.com/rauchg/status/807626710350839808?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E807626710350839808%7Ctwgr%5E&ref_url=https%3A%2F%2Fkentcdodds.com%2Fblog%2Fwrite-tests) popular tweet as his preferred methodology. 
+...That is, until it was time to onboard a new member onto our team. He was at the time a junior developer, who was interested in our project specifically because of our judicious unit testing. While he admitted that it seemed to  work well for us, he was not convinced that unit testing so rigorously was worth the trouble, quoting [this](https://twitter.com/rauchg/status/807626710350839808?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E807626710350839808%7Ctwgr%5E&ref_url=https%3A%2F%2Fkentcdodds.com%2Fblog%2Fwrite-tests) popular tweet as his preferred methodology. His first few days with us were nothing unusual. We walked him through our stack, explained what the product we worked on actually did, and went to a bunch of meetings. We were in between Epics at the time, so things were pretty slow. He picked up a few smaller tickets while we waited for something more substantial, and all was well. 
 
 :Success. Low defects. Team praised for unit-testing efforts. Great pride in work, for as while...:
 
