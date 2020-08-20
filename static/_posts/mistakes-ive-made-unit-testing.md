@@ -39,5 +39,5 @@ So what went wrong? How did something that worked so well initially come crashin
 
 <br>
 
-In short: be careful with abstraction in unit tests. Unit tests can seem like a safe space free from the typical burdens of good design, but adopting such a mindset will surely lead to pain and suffering to your future self, and may even scare away the new guy...
+In short: be careful with abstraction in unit tests. Unit tests can seem like a safe space, free from the typical burdens of good design, but adopting such a mindset will surely lead to pain and suffering to your future self. And who knows, they may even scare away the new guy...
 
