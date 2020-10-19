@@ -17,4 +17,6 @@ Most people know of the "declarative" paradigm because of its most popular sub-p
 
 While not quite "functional" programming, Dockerfiles certainly fall into the "declarative" bucket. I have always wondered if that is why despite their simple syntax, people like me initially struggle when learning how to write and organize them. The paradigm is different, and so the frame of mind necessary to write an efficient Dockerfile is different.
 
+<br>
+
 Some of this might be common sense to those who are more seasoned at writing Dockerfiles, but I personally did not find the best practices intuitive when I first started. 
