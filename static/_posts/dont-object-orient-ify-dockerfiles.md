@@ -23,11 +23,9 @@ I've got an application which is composed of a few different pieces, written in 
 
 <br>
 
-- an API which is used to access processed data and check the status of certain jobs. It doesn't do much on its own, mostly just handling authentication and then passing the work to another component or putting a message into a queue
-
-- a component which accepts data, transforms it a bit, and submits it to one of several 3rd party APIs for processing
-
-- a component which periodically checks the 3rd party APIs for results
+* an API which is used to access processed data and check the status of certain jobs. It doesn't do much on its own, mostly just handling authentication and then passing the work to another component or putting a message into a queue
+* a component which accepts data, transforms it a bit, and submits it to one of several 3rd party APIs for processing
+* a component which periodically checks the 3rd party APIs for results
 
 <br>
 
@@ -35,4 +33,9 @@ An important point to note is that these components are not microservices. They 
 
 <br>
 
-These services are all in the same Solution, so there are a few bits of code that they all share. I wanted to avoid having to compile the same pieces more than once, and was unsure of the best way to go about it. From what I understood, multi-stage builds were the way to go. But how would I organize the stages? Every example Dockerfile I had seen online up to this point was only ever building one component, so it made sense for all the stages to live in the same file. My case seemed different though - I had *multiple* components, and therefore putting them all in the same Dockerfile was not a good separation of concerns. Docker images are kind of like classes, right? All I would need to do is create a Dockerfile that built the entire solution, then I could have an individual Dockerfile for each component which would simply "inherit" from the build image and copy over the pieces that it needed to function. 
+These services are all in the same Solution, so there are a few bits of code that they all share. I wanted to avoid having to compile the same pieces more than once, and was unsure of the best way to go about it. From what I understood, multi-stage builds were the way to go. But how would I organize the stages? Every example Dockerfile I had seen online up to this point was only ever building one component, so it made sense for all the stages to live in the same file. My case seemed different though - I had *multiple* components, and therefore putting them all in the same Dockerfile was not a good separation of concerns. Docker images are kind of like classes, right? All I would need to do is create a Dockerfile that built the entire solution, then I could have an individual Dockerfile for each component which would simply "inherit" from the build image and copy over the pieces that it needed to function. In the end, this is what the folder structure looked like:
+
+![Example folder structure: a solution with 3 sub-folders, each of which with its own Dockerfile, as well as on at the top-level](/uploads/old-dockerfile-structure.png)
+
+<br>
+
