@@ -21,8 +21,15 @@ While not quite "functional" programming, Dockerfiles certainly fall into the "d
 
 I've got an application which is composed of a few different pieces. Their specific functions aren't all that important, but generally this is what they did:
 
-\- an API which is used to access processed data and check the status of certain jobs. It doesn't do much on its own, mostly just handling authentication and then passing the work to another component or putting a message into a queue
+- an API which is used to access processed data and check the status of certain jobs. It doesn't do much on its own, mostly just handling authentication and then passing the work to another component or putting a message into a queue
 
-\- a component which accepts data, transforms it a bit, and submits it to one of several 3rd party APIs for processing
+- a component which accepts data, transforms it a bit, and submits it to one of several 3rd party APIs for processing
 
-\- a component which periodically checks the 3rd party APIs for results
+- a component which periodically checks the 3rd party APIs for results
+
+
+
+An important point to note is that these components are not microservices. They are split up because each component needs to be able to scale independently from the others in order to keep costs down while still allowing horizontal scaling. This is *one* application, with several deployable components.
+
+<br>
+
