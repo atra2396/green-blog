@@ -67,3 +67,7 @@ services:
     depends_on:
       - build_image
 ```
+
+<br>
+
+This worked. Compose would run the build image first, and then the three real components would proceed to build in some random order, each simply copying out of the "build" image only the artifacts that it needed and declare whatever entrypoint it needed to run. This resulted in four images instead of three every time docker-compose ran, instead of just the three I cared about. ```docker-compose up``` would start all four images, but the "build" image would immediately exit since it wasn't given a command to run. To my inexperienced mind, this _seemed_ like a sort of design pattern; I likened it to a space shuttle, which jettisons some of its parts after they've served their purpose.
