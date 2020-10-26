@@ -1,7 +1,7 @@
 ---
 layout: blog
 title: Don't Object Orient-ify Dockerfiles
-date: 2020-10-21T13:21:52.044Z
+date: 2020-10-26T00:26:14.628Z
 ---
 Many of us work with object-oriented languages every day. The OO paradigm has all sorts of principles and pillars which take a lifetime to master. Many of us, myself very much included, can have trouble when trying to learn a new language that's of a different paradigm. Even closely-related languages which still fall into the "imperative" bucket can feel esoteric, and sometimes even archaic.
 
@@ -39,3 +39,31 @@ These services are all in the same Solution, so there are a few bits of code tha
 
 <br>
 
+As I said earlier, all three of these components comprise a single application. I wasn't planning on _ever_ needing to run them individually. I wrote up a simple docker-compose.yml file which looked like this:
+
+```
+version: "3.1"
+services:
+  build_image:
+    build:
+      context: .
+      dockerfile: .
+  api:
+    build:
+      context: .
+      dockerfile: ./API
+    depends_on:
+      - build_image
+  submissions:
+    build:
+      context: .
+      dockerfile: ./DataSubmitter
+    depends_on:
+      - build_image
+  results:
+    build:
+      context: .
+      dockerfile: ./ResultsProcessor
+    depends_on:
+      - build_image
+```
