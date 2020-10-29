@@ -3,6 +3,8 @@ layout: blog
 title: Don't Object Orient-ify Dockerfiles
 date: 2020-10-26T00:26:14.628Z
 ---
+# Intuition is not a perfect guide
+
 Many of us work with object-oriented languages every day. The OO paradigm has all sorts of principles and pillars which take a lifetime to master. Many of us, myself very much included, can have trouble when trying to learn a new language that's of a different paradigm. Even closely-related languages which still fall into the "imperative" bucket can feel esoteric, and sometimes even archaic.
 
 <br>
@@ -78,4 +80,5 @@ I came to learn that this is not the recommended way of structuring Docker build
 
 <br>
 
+## tl;dr
 The point of all of my rambling is this: don't assume that your intuition will always lead you to the path of righteousness. Object oriented thinking will get you far when working with an object oriented language, but do not assume that the principles are transferable. Next time you pick up a new language or technology, especially if it's not imperative, don't be afraid to toss some of your existing knowledge out the window. Try to approach new problems with an unbiased mind, and let the problem at hand lead you back to your experience if it really is the answer.
