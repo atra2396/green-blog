@@ -1,7 +1,7 @@
 ---
 layout: blog
 title: Don't Object Orient-ify Dockerfiles
-date: 2020-10-26T00:26:14.628Z
+date: 2020-11-15T15:38:52.294Z
 ---
 # Intuition is not a perfect guide
 
