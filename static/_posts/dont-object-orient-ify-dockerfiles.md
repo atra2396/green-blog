@@ -31,7 +31,7 @@ I've got an application which is composed of a few different pieces, written in 
 
 <br>
 
-An important point to note is that these components are not microservices. They are split up because each component needs to be able to scale independently from the others in order to keep costs down while still allowing horizontal scaling. This is *one* application, with several deployable components.
+An important point to note is that these components are not microservices. This is *one* application, with several deployable components.
 
 <br>
 
@@ -81,4 +81,4 @@ I came to learn that this is not the recommended way of structuring Docker build
 <br>
 
 ## tl;dr
-The point of all of my rambling is this: don't assume that your intuition will always lead you to the path of righteousness. Object oriented thinking will get you far when working with an object oriented language, but do not assume that the principles are transferable. Next time you pick up a new language or technology, especially if it's not imperative, don't be afraid to toss some of your existing knowledge out the window. Try to approach new problems with an unbiased mind, and let the problem at hand lead you back to your experience if it really is the answer.
+The point of all this can be generalized: don't assume that your intuition will always lead you to the path of righteousness. Object oriented thinking will get you far when working with an object oriented language, but do not assume that the principles are transferable. Next time you pick up a new language or technology, especially if it's not imperative, don't be afraid to toss some of your existing knowledge out the window. Try to approach new problems with an unbiased mind, and let the problem at hand lead you back to your experience if it really is the answer.
