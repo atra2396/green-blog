@@ -1,42 +1,30 @@
 <style>
 	nav {
-		border-bottom: 1px solid rgba(11, 73, 11, 0.1);
 		font-weight: 300;
 		padding: 0 1em;
+		display: flex;
+		flex-direction: row;
+		justify-content: start;
+		max-width: 70em;
 	}
 
-	ul {
-		margin: 0;
-		padding: 0;
+	nav .logo {
+		max-width: 10em;
 	}
 
-	/* clearfix */
-	ul::after {
-		content: '';
-		display: block;
-		clear: both;
-	}
-
-	li {
-		display: block;
-		float: left;
-	}
-
-	li :hover {
-		background-color: #efffef;
+	div :hover {
+		text-decoration: underline;
 	}
 
 	a {
 		text-decoration: none;
 		color: inherit;
 		padding: 1em 0.5em;
-		display: block;
 	}
 </style>
 
 <nav>
-	<ul>
-		<li><a rel=prefetch href='/'>home</a></li>
-		<li><a rel=prefetch href='blog'>blog</a></li>
-	</ul>
+		<div><a rel=prefetch href='/'><img class='logo' src='/greendev.png' alt='The Green Developer'/></a></div>
+		<div><a rel=prefetch href='/'>home</a></div>
+		<div><a rel=prefetch href='blog'>blog</a></div>
 </nav>
