@@ -1,7 +1,7 @@
 <style>
 	nav {
 		font-weight: 300;
-		padding: 0 1em;
+		/* padding: 0 1em; */
 		display: flex;
 		flex-direction: row;
 		justify-content: start;
@@ -16,6 +16,14 @@
 		text-decoration: underline;
 	}
 
+	.spacer {
+		flex-grow: 1;
+	}
+
+	.github {
+		max-width: 1.2em;
+	}
+
 	a {
 		text-decoration: none;
 		color: inherit;
@@ -27,4 +35,6 @@
 		<div><a rel=prefetch href='/'><img class='logo' src='/greendev.png' alt='The Green Developer'/></a></div>
 		<div><a rel=prefetch href='/'>home</a></div>
 		<div><a rel=prefetch href='blog'>blog</a></div>
+		<div class="spacer"></div>
+		<div><a href='www.github.com/atra2396'><img class='github' src='/github-logo.png' alt='GitHub Link'/></a></div>
 </nav>
