@@ -5,7 +5,7 @@ date: 2020-12-20T16:18:30.088Z
 ---
 What professional skills do I want to develop in 2021?
 
-- Learn to write idiomatic Python: My background is primarily C# development, but my new job does most of their work in Python. Anyone can write Python code, but not everyone can write _good_ Python code. In 2021, I want to become just as well-versed in Python patterns and language features as I am in C#.
+- Learn to write idiomatic Python: My background is primarily C# development, but my new job does most of their work in Python. Anyone can write Python, but not everyone writes _good_ Python, and worse yet, what's good C# code does not necessarily translate 1-to-1 into good Python code. In 2021, I want to become just as well-versed in Python patterns and language features as I am in C#.
 
 - Gain a stronger foundation in DevOps and Infrastructure principles: My title is "Software Developer", but for a while now I have been interested in DevOps. I don't think I want it to be my full-time job, but understanding infrastructure and DevOps tooling seems to me like a valuable tool. A developer with a solid understanding of both development and infrastructure should be able to make more educated architectural decisions, reason better about system-level efficiency (that is, price vs. performance), and improve the developer experience. Devs that understand DevOps and infrastructure can more effectively separate marketing material from real, useful features (at least, I think so anyway). 
 
