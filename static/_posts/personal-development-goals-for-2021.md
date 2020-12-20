@@ -3,7 +3,7 @@ layout: blog
 title: Personal Development Goals for 2021
 date: 2020-12-20T16:18:30.088Z
 ---
-What professional skills do I want to develop in 2021?
+What development-related skills do I want to pursue in 2021?
 
 - Learn to write idiomatic Python: My background is primarily C# development, but my new job does most of their work in Python. Anyone can write Python, but not everyone writes _good_ Python, and worse yet, what's good C# code does not necessarily translate 1-to-1 into good Python code. In 2021, I want to become just as well-versed in Python patterns and language features as I am in C#.
 
