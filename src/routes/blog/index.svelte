@@ -14,13 +14,6 @@
 	export let recentPosts;
 </script>
 
-<style>
-	ol {
-		font-size: 1.3em;
-	}
-
-</style>
-
 <svelte:head>
 	<title>Blog</title>
 </svelte:head>
