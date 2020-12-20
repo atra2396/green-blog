@@ -13,20 +13,15 @@
 		box-sizing: border-box;
 	}
 
-	a {
-		color: inherit;
-		text-decoration: none;
-	}
-
-	.logo {
-	width: 15em;
-	}
 </style>
 
+<svelte:head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@300&display=swap" rel="stylesheet">
+</svelte:head>
 
 <main>
 	<div class='content'>
-		<a href='/'><img class='logo' src='/greendev.png' alt='The Green Developer'/></a>
 		<Nav />
 		<br>
 		<slot></slot>
